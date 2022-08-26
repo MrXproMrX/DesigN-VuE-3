@@ -1,12 +1,12 @@
 export default[
     {
-        link:<iframe width="455" height="809" src="https://www.youtube.com/embed/98AmQVN375M" title="Египетская мифология      #египетскаямифология #скандинавия #мифология #богиня #озвучка #мифы" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    },
-    
-    {
         link:<iframe width="424" height="238" src="https://www.youtube.com/embed/23vxRitx3kA" title="Трейлер канала / мифология / озвучка" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>,
     },
 
+    {
+        link:<iframe width="455" height="809" src="https://www.youtube.com/embed/98AmQVN375M" title="Египетская мифология      #египетскаямифология #скандинавия #мифология #богиня #озвучка #мифы" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    },
+    
     {
         link:<iframe width="455" height="809" src="https://www.youtube.com/embed/Xnmkz3KXFz0" title="Славянский бог ВЕЛЕС #славянскаямифология #озвучка #мифы #славяне #русь #язычество" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
     },
