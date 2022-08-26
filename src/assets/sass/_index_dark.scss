@@ -1,0 +1,40 @@
+.darkmode_mrx{
+    background-color: $link !important; 
+
+    .header__menu__link,
+    .about__text,
+    .works__cart__link__item,
+    .footer__title__h4,
+    .header__button,
+    .works__title__h4,
+    .Contribution__title__h3{
+        color:#0D0D0D;
+    }
+
+    .header{
+        border-bottom: 1px solid #ece7e7;
+        background: rgba(255, 255, 255, 0.25);
+        backdrop-filter: blur(25px);
+    }
+
+    .works__title__h4,
+    .Contribution__list{
+        background: linear-gradient(90deg, rgba(255, 255, 255, 0.81) 19.79%, rgba(255, 255, 255, 0) 97.4%);
+    }
+}
+
+
+@media (max-width:1000px){
+    .darkmode_mrx{
+        .header__burger__menu{
+            padding: 30px 30px 30px 60px;
+            position: fixed;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            height: auto;
+            background-color:rgba(255, 255, 255, 90%);
+            border-bottom: 1px solid #ece7e7;
+        }
+    }
+}

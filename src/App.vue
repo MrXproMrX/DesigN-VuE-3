@@ -1,30 +1,32 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </nav>
-  <router-view/>
+  <section class="black_max" :class="{darkmode_mrx: mrx_pro == false}">
+    <Header @darkhol="darkhol"></Header>
+    <router-view/>
+    <Footer></Footer>
+  </section>
 </template>
 
-<style lang="scss">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
 
-nav {
-  padding: 30px;
+<script>
+import Header from "@/components/headerFooter/Header.vue";
+import Footer from "@/components/headerFooter/Footer.vue";
+export default({
+  components:{
+    Header,
+    Footer
+  },
 
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+  data(){
+    return{
+      dark:'no',
+      mrx_pro:Header.dark
     }
-  }
-}
-</style>
+  },
+
+  methods:{
+    darkhol(dark){
+     this.mrx_pro = dark
+    }
+  },
+})
+</script>
