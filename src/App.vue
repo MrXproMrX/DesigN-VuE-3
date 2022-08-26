@@ -1,7 +1,7 @@
 <template>
   <section class="black_max" :class="{darkmode_mrx: mrx_pro == false}">
     <Header @darkhol="darkhol"></Header>
-    <router-view/>
+    <router-view></router-view>
     <Footer></Footer>
   </section>
 </template>
@@ -13,7 +13,7 @@ import Footer from "@/components/headerFooter/Footer.vue";
 export default({
   components:{
     Header,
-    Footer
+    Footer,
   },
 
   data(){

@@ -1,7 +1,7 @@
 export default[
     {
-        link:'#!',
-        title:'Works'
+        link:'/video',
+        title:'video'
     },
 
     {
