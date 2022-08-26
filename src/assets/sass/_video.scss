@@ -1,6 +1,6 @@
 .iframe{
     position: relative;
-    margin: 60px 0;
+    margin: 80px 0;
 
     &__list__mrx{
         height: 500px;
@@ -135,10 +135,19 @@
     .iframe__list__mrx{
         width: 100%;
     }
+
+    .iframe{
+        margin: 40px 0;
+    }
 }
 
 
 @media (max-width:650px){
+
+    .iframe{
+        margin: 30px 0;
+    }
+
     .iframe__list{
         margin-left: 30px;
         margin-right: 30px;
