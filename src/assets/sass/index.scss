@@ -170,6 +170,38 @@ body{
     &__img{
         @include fiximg(100%,100%,true);
     }
+
+    &__video{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(10, 12, 16, 90%);
+        z-index: 50;
+
+        button{
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            cursor: pointer;
+        }
+    }
+
+    &__video__cart{
+        width: 100%;
+        height: 100%;
+        position: relative;
+
+        iframe{
+            width: 80%;
+            height: 80%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    }
 }
 
 

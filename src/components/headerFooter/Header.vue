@@ -15,8 +15,8 @@
                         </div>
 
                         <div class="header__burger">
-                            <button v-if="burger" @click="burger = !burger" data-target="slide-out" class="header__button sidenav-trigger"><i class="fas fa-times"></i></button>
-                            <button v-else @click="burger = !burger" data-target="slide-out" class="header__button sidenav-trigger"><i class="fas fa-bars"></i></button>
+                            <button v-if="burger" @click="burger = !burger" data-target="slide-out" class="header__button"><i class="fas fa-times"></i></button>
+                            <button v-else @click="burger = !burger" data-target="slide-out" class="header__button"><i class="fas fa-bars"></i></button>
                         </div>
 
                         <button @click="$emit('darkhol',this.dark = !this.dark)" class="header__button">

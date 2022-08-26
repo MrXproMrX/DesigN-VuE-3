@@ -12,8 +12,8 @@
                     </div>
 
                     <div class="about__cart">
-                        <router-link to="#!" class="about__cart__link_1">Works <span><i class="fas fa-angle-down"></i></span></router-link>
-                        <router-link to="#!" class="about__cart__link_2">Free Stuff</router-link>
+                        <button @click="aboutVideo = !aboutVideo" class="about__cart__link_1">Video <span><i class="fas fa-angle-down"></i></span></button>
+                        <router-link to="/video" class="about__cart__link_2">All videos</router-link>
                     </div>
                 </div>
 
@@ -22,6 +22,12 @@
                         <img src="../../assets/foto/fon.png" alt="logo">
                     </div>
                 </div>
+            </div>
+
+
+            <div class="about__video" v-if="aboutVideo" @click="aboutVideo = !aboutVideo">
+                <button class="header__button"><i class="fas fa-times"></i></button>
+                <AboutVideoVue></AboutVideoVue>
             </div>
         </section>
     </div>
@@ -114,14 +120,17 @@
 <script>
 import IndexWorks from '@/components/Index/IndexWorks.vue'
 import Indexworks from '@/data/IndexWorks';
+import AboutVideoVue from '@/components/Index/AboutVideo.vue';
 export default {
     components:{
         IndexWorks,
+        AboutVideoVue
     },
 
     data(){
         return{
-            works:Indexworks
+            works:Indexworks,
+            aboutVideo:false
         }
     }
 }
