@@ -2,6 +2,7 @@
 @import './files/fonts';
 @import './files/mixins';
 @import '_index_dark.scss';
+@import '_video.scss';
 
 body{
     font-family: 'Cinzel', sans-serif;
@@ -412,7 +413,8 @@ body{
     .about__list,
     .works__cart,
     .Contribution__cart,
-    .footer__list{
+    .footer__list,
+    .iframe__list{
         margin-left: 60px;
         margin-right: 60px;
     }
@@ -551,7 +553,8 @@ body{
     .about__list,
     .works__cart,
     .Contribution__cart,
-    .footer__list{
+    .footer__list,
+    .iframe__list{
         margin-left: 30px;
         margin-right: 30px;
     }
