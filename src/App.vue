@@ -26,6 +26,7 @@ export default({
   methods:{
     darkhol(dark){
      this.mrx_pro = dark
+     console.log( this.mrx_pro = dark)
     }
   },
 })

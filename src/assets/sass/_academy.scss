@@ -1,0 +1,69 @@
+// Academy start
+
+.Academy{
+    position: relative;
+    margin-bottom: 80px;
+    margin-top: 80px;
+
+
+    &__title__h2{
+        @include fontAll(64px,500,transparent);
+        background: linear-gradient(295.38deg, #FFE5A2 4.89%, #BF841A 50.44%, #FFCD74 95.06%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    &__img{
+        float: left;
+        margin-right: 30px;
+        margin-bottom: 30px;
+        @include fiximg(auto,500px,false);
+        max-width: 50%;
+    }
+
+    &__text{
+        @include fontAll(22px,400,$text);
+        line-height: 44px;
+        text-align: justify;
+    }
+
+    &__menu{
+        li{
+            display: flex;
+            align-items:center;
+            grid-gap: 20px;
+            cursor: pointer;
+        }
+        li+li{
+            margin-top: 20px;
+        }
+    }
+
+    &__menu__img{
+        @include fiximg(100px,100px,true);
+        img{
+            width: 100px;
+            height: 100px;
+        }
+    }
+
+    &__menu__title{
+        @include fontAll(22px,400,$text);
+        text-align: justify;
+
+        max-height: 60px;
+        -webkit-line-clamp: 2;
+        line-height: 1.4;
+        position: relative;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: normal;
+    }
+}
+
+// Academy end

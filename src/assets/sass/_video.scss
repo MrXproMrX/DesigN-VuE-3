@@ -19,6 +19,15 @@
     &__video{
         width: 100px;
         height: 100px;
+        object-fit: cover;
+        background: linear-gradient(295.38deg, #FFE5A2 4.89%, #BF841A 50.44%, #FFCD74 95.06%);
+        border-radius: 5px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        -ms-border-radius: 5px;
+        -o-border-radius: 5px;
+        overflow: hidden;
+        display: block;
     }
 
     &__item__cart{

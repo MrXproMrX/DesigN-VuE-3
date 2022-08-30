@@ -9,5 +9,10 @@
 <script>
 export default {
     props:['links'],
+    data(){
+        return{
+            burger:false
+        }
+    }
 }
 </script>
